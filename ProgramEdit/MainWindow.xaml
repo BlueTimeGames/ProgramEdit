@@ -11,7 +11,7 @@
         <Label Content="Casual Esport Manager" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="30"/>
         <ComboBox Name="Databases" HorizontalAlignment="Center" Margin="0,153,0,0" VerticalAlignment="Top" Width="120"/>
         <Label Content="Editor" HorizontalAlignment="Center" Margin="0,60,0,0" VerticalAlignment="Top" FontSize="20"/>
-        <Label Content="Databáze" HorizontalAlignment="Center" Margin="0,127,0,0" VerticalAlignment="Top"/>
+        <Label Content="Soupisky" HorizontalAlignment="Center" Margin="0,127,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
