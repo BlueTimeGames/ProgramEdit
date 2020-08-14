@@ -1,0 +1,28 @@
+﻿<Window x:Class="ProgramEdit.TeamEdit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProgramEdit"
+        mc:Ignorable="d"
+        Title="TeamEdit" Height="375" Width="530">
+    <Grid>
+        <ListBox Name="TeamsList" HorizontalAlignment="Left" Height="195" Margin="10,10,0,0" VerticalAlignment="Top" Width="170" SelectionChanged="TeamsList_SelectionChanged"  />
+        <Button Name="AddNewTeam" Content="Přidat jako nový tým" HorizontalAlignment="Left" Margin="10,295,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="AddNewTeam_Click" />
+        <Button Name="UpdateTeam" Content="Uložit" HorizontalAlignment="Left" Margin="10,245,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="UpdateTeam_Click" />
+        <Button Name="Back" Content="Odejít bez uložení" HorizontalAlignment="Left" Margin="220,245,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="Back_Click" />
+        <Button Name="Delete" Content="Odstranit tým" HorizontalAlignment="Left" Margin="220,295,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="Delete_Click" />
+        <TextBox Name="Name" HorizontalAlignment="Left" Height="25" Margin="380,20,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="Shortcut" HorizontalAlignment="Left" Height="25" Margin="380,60,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="City" HorizontalAlignment="Left" Margin="380,100,0,0" VerticalAlignment="Top" Width="120" Height="25"/>
+        <TextBox Name="Budget" HorizontalAlignment="Left" Height="25" Margin="380,140,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="Reputation" HorizontalAlignment="Left" Height="25" Margin="380,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Název:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="200,20,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Zkratka:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="200,60,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Město:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="200,100,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Rozpočet:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="200,140,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Reputace:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="200,180,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Name="Saved" Content="Uloženo" HorizontalAlignment="Left" Margin="200,245,0,0" VerticalAlignment="Top" FontSize="20" Width="170" Visibility="Hidden" />
+        <Button Name="AddSections" Content="Přidat sekce" HorizontalAlignment="Left" Margin="400,245,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="AddSections_Click"  />
+    </Grid>
+</Window>

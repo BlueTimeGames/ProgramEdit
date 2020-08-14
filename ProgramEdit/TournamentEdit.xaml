@@ -1,0 +1,51 @@
+﻿<Window x:Class="ProgramEdit.TournamentEdit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProgramEdit"
+        mc:Ignorable="d"
+        Title="TournamentEdit" Height="617" Width="550">
+    <Grid>
+        <ListBox Name="TournamentsList" HorizontalAlignment="Left" Height="355" Margin="10,10,0,0" VerticalAlignment="Top" Width="170" SelectionChanged="TournamentsList_SelectionChanged" />
+        <Button Name="AddNewTournament" Content="Přidat jako nový turnaj" HorizontalAlignment="Left" Margin="10,385,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="AddNewTournament_Click"  />
+        <Button Name="UpdateTournament" Content="Uložit" HorizontalAlignment="Left" Margin="10,435,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="UpdateTournament_Click" />
+        <Button Name="Back" Content="Odejít bez uložení" HorizontalAlignment="Left" Margin="10,485,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="Back_Click" />
+        <Button Name="Delete" Content="Odstranit turnaj" HorizontalAlignment="Left" Margin="10,535,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="Delete_Click"/>
+        <TextBox Name="Name" HorizontalAlignment="Left" Height="25" Margin="400,20,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="Shortcut" HorizontalAlignment="Left" Height="25" Margin="400,60,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="NumOfTeams" HorizontalAlignment="Left" Height="25" Margin="400,100,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="Sys" HorizontalAlignment="Left" Margin="400,140,0,0" VerticalAlignment="Top" Width="120" Height="25"/>
+        <DatePicker Name="StartDate" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,180,0,0" Width="120" Height="25"/>
+        <DatePicker Name="EndDate" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,220,0,0" Width="120" Height="25"/>
+        <TextBox Name="Mo" HorizontalAlignment="Left" Height="25" Margin="380,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="20"/>
+        <TextBox Name="Tu" HorizontalAlignment="Left" Height="25" Margin="400,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="20"/>
+        <TextBox Name="We" HorizontalAlignment="Left" Height="25" Margin="420,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="20"/>
+        <TextBox Name="Th" HorizontalAlignment="Left" Height="25" Margin="440,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="20"/>
+        <TextBox Name="Fr" HorizontalAlignment="Left" Height="25" Margin="460,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="20"/>
+        <TextBox Name="Sa" HorizontalAlignment="Left" Height="25" Margin="480,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="20"/>
+        <TextBox Name="Su" HorizontalAlignment="Left" Height="25" Margin="500,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="20"/>
+        <TextBox Name="PrizePool" HorizontalAlignment="Left" Height="25" Margin="400,300,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="PPTeams" HorizontalAlignment="Left" Height="25" Margin="400,340,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="PPDividing" HorizontalAlignment="Left" Margin="400,380,0,0" VerticalAlignment="Top" Width="120" Height="25"/>
+        <ComboBox Name="City" HorizontalAlignment="Left" Margin="400,420,0,0" VerticalAlignment="Top" Width="120" Height="25"/>
+        <TextBox Name="TokenValue" HorizontalAlignment="Left" Height="25" Margin="400,460,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="Section" HorizontalAlignment="Left" Margin="400,500,0,0" VerticalAlignment="Top" Width="120" Height="25"/>
+        <TextBox Name="BestOf" HorizontalAlignment="Left" Height="25" Margin="400,540,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Název:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,20,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Zkratka:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,60,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Počet týmů:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,100,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Systém:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,140,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Začátek turnaje:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,180,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Konec turnaje:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,220,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Hrací dny:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,260,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Prize pool:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,300,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Týmy rozdělující prizepool:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,340,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Typ rozdělení prizepoolu:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,380,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Město konání:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,420,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Hodnota vstupu:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,460,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Sekce:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,500,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Zápasy 'Best Of':" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,540,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Name="Saved" Content="Uloženo" HorizontalAlignment="Left" Margin="200,245,0,0" VerticalAlignment="Top" FontSize="20" Width="170" Visibility="Hidden" />
+    </Grid>
+</Window>

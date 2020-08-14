@@ -1,0 +1,33 @@
+﻿<Window x:Class="ProgramEdit.Tokens"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProgramEdit"
+        mc:Ignorable="d"
+        Title="Tokens" Height="280" Width="700">
+    <Grid>
+        <ComboBox Name="Token1" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="Token2" HorizontalAlignment="Left" Margin="30,60,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="Token3" HorizontalAlignment="Left" Margin="30,90,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="Token4" HorizontalAlignment="Left" Margin="30,120,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="Token5" HorizontalAlignment="Left" Margin="30,150,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="Token6" HorizontalAlignment="Left" Margin="200,30,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="Token7" HorizontalAlignment="Left" Margin="200,60,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="Token8" HorizontalAlignment="Left" Margin="200,90,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="Token9" HorizontalAlignment="Left" Margin="200,120,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="Token10" HorizontalAlignment="Left" Margin="200,150,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="Token11" HorizontalAlignment="Left" Margin="370,30,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="Token12" HorizontalAlignment="Left" Margin="370,60,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="Token13" HorizontalAlignment="Left" Margin="370,90,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="Token14" HorizontalAlignment="Left" Margin="370,120,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="Token15" HorizontalAlignment="Left" Margin="370,150,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="Token16" HorizontalAlignment="Left" Margin="540,30,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="Token17" HorizontalAlignment="Left" Margin="540,60,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="Token18" HorizontalAlignment="Left" Margin="540,90,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="Token19" HorizontalAlignment="Left" Margin="540,120,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="Token20" HorizontalAlignment="Left" Margin="540,150,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Name="Apply" Content="Button" HorizontalAlignment="Left" Margin="310,202,0,0" VerticalAlignment="Top" Width="75" Click="Apply_Click" />
+
+    </Grid>
+</Window>

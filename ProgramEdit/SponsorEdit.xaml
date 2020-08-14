@@ -1,0 +1,27 @@
+﻿<Window x:Class="ProgramEdit.SponsorEdit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProgramEdit"
+        mc:Ignorable="d"
+        Title="SponsorEdit" Height="355" Width="550">
+    <Grid>
+        <ListBox Name="SponsorsList" HorizontalAlignment="Left" Height="195" Margin="10,10,0,0" VerticalAlignment="Top" Width="170" SelectionChanged="SponsorsList_SelectionChanged"  />
+        <Button Name="AddNewSponsor" Content="Přidat jako nového sponsora" HorizontalAlignment="Left" Margin="10,275,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="AddNewSponsor_Click" />
+        <Button Name="UpdateSponsor" Content="Uložit" HorizontalAlignment="Left" Margin="10,225,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="UpdateSponsor_Click" />
+        <Button Name="Back" Content="Odejít bez uložení" HorizontalAlignment="Left" Margin="220,275,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="Back_Click"/>
+        <Button Name="Delete" Content="Odstranit sponsora" HorizontalAlignment="Left" Margin="220,225,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="Delete_Click"/>
+        <TextBox Name="Name" HorizontalAlignment="Left" Height="25" Margin="400,20,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="MonthlyPayment" HorizontalAlignment="Left" Height="25" Margin="400,60,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="RenewBonus" HorizontalAlignment="Left" Height="25" Margin="400,100,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="MinReputation" HorizontalAlignment="Left" Height="25" Margin="400,140,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="SuccessPayment" HorizontalAlignment="Left" Height="25" Margin="400,180,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Název:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,20,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Měsíční platba:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,60,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Bonus při podepsání:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,100,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Minimální reputace týmu:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,140,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Turnajový bonus [%]:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,180,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Name="Saved" Content="Uloženo" HorizontalAlignment="Left" Margin="200,245,0,0" VerticalAlignment="Top" FontSize="20" Width="170" Visibility="Hidden" />
+    </Grid>
+</Window>

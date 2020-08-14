@@ -1,0 +1,43 @@
+﻿<Window x:Class="ProgramEdit.PlayerEdit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProgramEdit"
+        mc:Ignorable="d"
+        Title="PlayerEdit" Height="550" Width="550">
+    <Grid>
+        <ListBox Name="PlayersList" HorizontalAlignment="Left" Height="275" Margin="10,10,0,0" VerticalAlignment="Top" Width="170" SelectionChanged="PlayersList_SelectionChanged"  />
+        <Button Name="AddNewPlayer" Content="Přidat jako nového hráče" HorizontalAlignment="Left" Margin="10,310,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="AddNewPlayer_Click"  />
+        <Button Name="UpdatePlayer" Content="Uložit" HorizontalAlignment="Left" Margin="10,360,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="UpdatePlayer_Click"/>
+        <Button Name="Back" Content="Odejít bez uložení" HorizontalAlignment="Left" Margin="10,410,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="Back_Click"  />
+        <Button Name="Delete" Content="Odstranit hráče" HorizontalAlignment="Left" Margin="10,460,0,0" VerticalAlignment="Top" Width="170" Height="30" Click="Delete_Click" />
+        <TextBox Name="Name" HorizontalAlignment="Left" Height="25" Margin="400,20,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="Surname" HorizontalAlignment="Left" Height="25" Margin="400,60,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="Nick" HorizontalAlignment="Left" Height="25" Margin="400,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <ComboBox Name="Nation" HorizontalAlignment="Left" Margin="400,140,0,0" VerticalAlignment="Top" Width="120" Height="25"/>
+        <ComboBox Name="Game" HorizontalAlignment="Left" Margin="400,180,0,0" VerticalAlignment="Top" Width="120" Height="25" SelectionChanged="Game_SelectionChanged"/>
+        <ComboBox Name="Position" HorizontalAlignment="Left" Margin="400,220,0,0" VerticalAlignment="Top" Width="120" Height="25"/>
+        <ComboBox Name="Team" HorizontalAlignment="Left" Margin="400,260,0,0" VerticalAlignment="Top" Width="120" Height="25" SelectionChanged="Team_SelectionChanged"/>
+        <ComboBox Name="Section" HorizontalAlignment="Left" Margin="400,300,0,0" VerticalAlignment="Top" Width="120" Height="25"/>
+        <TextBox Name="Value" HorizontalAlignment="Left" Height="25" Margin="400,340,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="Salary" HorizontalAlignment="Left" Height="25" Margin="400,380,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="IndiPoten" HorizontalAlignment="Left" Height="25" Margin="400,460,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+        <TextBox Name="TeamPoten" HorizontalAlignment="Left" Height="25" Margin="470,460,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+        <TextBox Name="IndiSkill" HorizontalAlignment="Left" Height="25" Margin="400,420,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+        <TextBox Name="TeamSkill" HorizontalAlignment="Left" Height="25" Margin="470,420,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+        <Label Content="Jméno:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,20,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Příjmení:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,60,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Nick:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,100,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Národnost:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,140,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Hra:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,180,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Pozice:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,220,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Tým:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,260,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Sekce:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,300,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Hodnota:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,340,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Plat:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,380,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Indi. a tým. schopnost:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,420,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Content="Indi. a tým. potenciál:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="220,460,0,0" VerticalAlignment="Top" Height="25" Width="150"/>
+        <Label Name="Saved" Content="Uloženo" HorizontalAlignment="Left" Margin="200,245,0,0" VerticalAlignment="Top" FontSize="20" Width="170" Visibility="Hidden" />
+    </Grid>
+</Window>
